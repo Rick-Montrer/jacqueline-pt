@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacqueline Bedolla Muñozledo | Enlaces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: '#0f172a',
+                        gold: '#C5A059',
+                        clinical: '#f8fafc',
+                        sage: '#647D75',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glass-btn:hover {
+            background: rgba(197, 160, 89, 0.15);
+            border-color: rgba(197, 160, 89, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-navy min-h-screen text-clinical flex flex-col items-center py-12 px-6 relative overflow-x-hidden">
+    <!-- Subtle Background Glow -->
+    <div class="fixed top-[-10%] left-[-10%] w-96 h-96 bg-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-96 h-96 bg-sage/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="w-full max-w-md relative z-10 flex flex-col items-center">
+        <!-- Logo -->
+        <div class="mb-6 animate-fade-in">
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 15C50 15 35 35 35 55C35 70 50 85 50 85C50 85 65 70 65 55C65 35 50 15 50 15Z" stroke="#C5A059" stroke-width="2" stroke-linejoin="round"/>
+                <circle cx="50" cy="55" r="10" stroke="#C5A059" stroke-width="2"/>
+                <path d="M50 45V65" stroke="#C5A059" stroke-width="2"/>
+                <circle cx="50" cy="35" r="3" fill="#C5A059"/>
+                <circle cx="50" cy="75" r="3" fill="#C5A059"/>
+            </svg>
+        </div>
+
+        <!-- Header -->
+        <div class="text-center mb-10 w-full">
+            <h1 class="font-cinzel text-2xl md:text-3xl tracking-wider text-white mb-2">JACQUELINE <span class="font-medium text-gold">BEDOLLA</span></h1>
+            <p class="font-inter font-light text-xs md:text-sm tracking-[0.2em] text-gray-400 uppercase mb-4">Lic. Fisioterapia y Rehabilitación</p>
+            <p class="font-inter font-light text-sm text-gray-300 italic">"Atención de Élite. Resultados Excepcionales."</p>
+        </div>
+
+        <!-- Links Container -->
+        <div class="flex flex-col gap-4 w-full font-inter tracking-wide">
+            
+            <a href="https://wa.me/524431827812" target="_blank" class="glass-btn flex items-center justify-center gap-3 w-full py-4 px-6 rounded-xl text-white font-medium shadow-lg group">
+                <i class="fa-brands fa-whatsapp text-xl text-gold group-hover:scale-110 transition-transform"></i>
+                Agendar Consulta
+            </a>
+
+            <a href="card.html" class="glass-btn flex items-center justify-center gap-3 w-full py-4 px-6 rounded-xl text-white font-medium shadow-lg group">
+                <i class="fa-solid fa-list-check text-xl text-gold group-hover:scale-110 transition-transform"></i>
+                Ver Servicios
+            </a>
+
+            <a href="#" class="glass-btn flex items-center justify-center gap-3 w-full py-4 px-6 rounded-xl text-white font-medium shadow-lg group">
+                <i class="fa-solid fa-location-dot text-xl text-gold group-hover:scale-110 transition-transform"></i>
+                Ubicación del Consultorio
+            </a>
+
+            <a href="index.html" class="glass-btn flex items-center justify-center gap-3 w-full py-4 px-6 rounded-xl text-white font-medium shadow-lg group">
+                <i class="fa-solid fa-gem text-xl text-gold group-hover:scale-110 transition-transform"></i>
+                Conoce Nuestra Clínica
+            </a>
+
+        </div>
+
+        <!-- Social Footer -->
+        <div class="mt-12 flex gap-6 justify-center">
+            <a href="https://instagram.com/Jacquelinebml" target="_blank" class="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold transition-all">
+                <i class="fa-brands fa-instagram text-xl"></i>
+            </a>
+            <a href="tel:4434889609" class="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold transition-all">
+                <i class="fa-solid fa-phone text-xl"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
